@@ -1,0 +1,112 @@
+.row {
+  margin-right: -65px;
+
+  &--padding-t {
+    padding-top: 80px;
+  }
+
+  &--large {
+    margin-right: 0;
+
+    @mixin atMedium {
+      margin-right: -40px;
+    }
+
+    @mixin atLarge {
+      margin-right: -100px;
+    }
+  }
+
+  & > .col {
+    padding-right: 65px;
+  }
+
+  &--large > .col {
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-right: 40px;
+    }
+
+    @mixin atLarge {
+      padding-right: 100px;
+    }
+  }
+
+  & > .col.margin-b-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin atMedium {
+    .col__md-4 {
+      float: left;
+      width: 33.33%;
+
+      &.col--large {
+        width: 37%;
+      }
+
+      &.col.margin-b-until-medium {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .col__md-8 {
+      float: left;
+      width: 66.66%;
+
+      &.col--small {
+        width: 63%;
+      }
+    }
+  }
+
+  @mixin atLarge {
+    .col__lg-4 {
+      float: left;
+      width: 33.33%;
+
+      &.col--large {
+        width: 37%;
+      }
+
+      &.col.margin-b-until-large {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .col__lg-8 {
+      float: left;
+      width: 66.66%;
+
+      &.col--small {
+        width: 63%;
+      }
+    }
+  }
+
+  @mixin clearfix;
+
+  /* Begin Equal Height Rules */
+  .flexbox &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > .col {
+      float: none;
+      display: flex;
+    }
+  }
+
+  .flexbox &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > .col {
+      float: none;
+      display: flex;
+    }
+  }
+}

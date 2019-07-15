@@ -1,0 +1,53 @@
+{
+  "name": "corporate_one-page-template",
+  "version": "1.0.0",
+  "description": "Free corporate responsive one page template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pariskwsto/corporate_one-page-template.git"
+  },
+  "author": "Paris Kostopoulos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pariskwsto/corporate_one-page-template/issues"
+  },
+  "homepage": "https://github.com/pariskwsto/corporate_one-page-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "autoprefixer": "^9.4.6",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-modernizr": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-usemin": "^0.3.29",
+    "normalize.css": "^8.0.1",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.1",
+    "postcss-simple-vars": "^5.0.1",
+    "webpack": "^4.29.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "lazysizes": "^4.1.5",
+    "picturefill": "^3.0.3",
+    "waypoints": "^4.0.1"
+  }
+}

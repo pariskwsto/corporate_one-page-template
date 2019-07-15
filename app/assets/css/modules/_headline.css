@@ -1,0 +1,93 @@
+.headline {
+  font-size: 1.875rem;
+  color: #2E3138;
+
+  @mixin atSmall {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2em;
+  }
+
+  @mixin atMedium {
+    font-size: 3.125rem;
+    font-weight: 900;
+    line-height: 1.5em;
+  }
+
+  &::after {
+    content: ' ';
+    display: block;
+    width: 40px;
+    margin-top: 8px;
+    border: 2px solid #2E3138;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atSmall {
+      width: 60px;
+      border: 3px solid #2E3138;
+      margin-top: 0;
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--light {
+    font-weight: 100;
+  }
+
+  &--medium {
+    font-weight: 400;
+  }
+
+  &--blue {
+    color: $mainBlue;
+
+    &::after {
+      border: 3px solid $mainBlue;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &.no-underline::after {
+      display: none;
+    }
+  }
+
+  &--white {
+    color: #fff;
+
+    &::after {
+      border: 3px solid #fff;
+    }
+  }
+
+  &--small {
+    font-size: 1.2rem;
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
+
+  &--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--margin-b-small {
+    margin-bottom: .6em;
+  }
+
+  &--margin-b-large {
+    margin-bottom: 1.6em;
+  }
+
+  &--no-margin-t {
+    margin-top: 0;
+  }
+}

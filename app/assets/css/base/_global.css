@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #8a8a8a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $mainBlue;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.content-container {
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0 0 1.2rem 0;
+
+    @mixin atSmall {
+      font-size: 1.125rem;
+      margin: 1.8rem 0;
+    }
+  }
+
+  .testimonial > p {
+    font-size: 1.125rem;
+    margin: 1rem 0 1.8rem 0;
+    text-align: center;
+  }
+}

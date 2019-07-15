@@ -1,0 +1,25 @@
+.btn {
+  font-weight: 700;
+  color: $mainBlue;
+  background-color: #fff;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 1;
+  transition: all .3s ease-out;
+
+  @mixin atMedium {
+    padding: 0.9375rem 1.875rem;
+    font-size: 1.25rem;
+  }
+
+  &--md {
+    font-size: 1rem;
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+    color: #fff;
+  }
+}

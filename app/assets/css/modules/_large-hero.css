@@ -1,0 +1,67 @@
+.large-hero {
+  position: relative;
+
+  &__image {
+    display: block;
+  }
+
+  &__text-content {
+    padding-top: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-shadow: 3px 0px 40px rgba($mainBlue, 0.34);
+    margin: 0 0 0.5rem 0;
+
+    @mixin atSmall {
+      font-size: 3.4rem;
+    }
+
+    @mixin atMedium {
+      font-size: 4.8rem;
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-shadow: 3px 0px 40px rgba($mainBlue, 0.34);
+    margin: 0 0 2.2rem 0;
+
+    @mixin atSmall {
+      font-size: 1.9rem;
+      margin: 0 0 2.6rem 0;
+    }
+
+    @mixin atMedium {
+      font-size: 3rem;
+      margin: 0 0 2.6rem 0;
+    }
+
+    @mixin atLarge {
+      font-size: 3.4rem;
+      margin: 0 0 2.6rem 0;
+    }
+  }
+
+  & .btn.mb-hidden {
+    opacity: 0;
+    visibility: hidden;
+
+    @mixin atMedium {
+      opacity: 1;
+    }
+  }
+}

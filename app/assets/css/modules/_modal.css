@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & .headline {
+    margin-top: 0;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 auto 38px;
+    max-width: 76%;
+    line-height: 1.8;
+
+    @mixin atMedium {
+      max-width: 50%;
+      margin: 0 auto 46px;
+      font-size: 2rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    transform: scaleX(1.4);
+    transform-origin: 100% 0;
+    color: $mainBlue;
+    width: 30px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $mainBlue;
+
+      & span {
+        color: #fff;
+      }
+    }
+
+    & span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
