@@ -1,0 +1,35 @@
+{
+  "name": "corporate_one-page-template",
+  "version": "1.0.0",
+  "description": "A corporate one-page responsive template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.20",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.0",
+    "postcss-simple-vars": "^7.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pariskwsto/corporate_one-page-template.git"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "Paris Kostopoulos <pariskwsto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pariskwsto/corporate_one-page-template/issues"
+  },
+  "homepage": "https://github.com/pariskwsto/corporate_one-page-template#readme"
+}
