@@ -3,3 +3,8 @@ body {
   background-color: $primaryWhite;
   font-family: $fontFamily;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

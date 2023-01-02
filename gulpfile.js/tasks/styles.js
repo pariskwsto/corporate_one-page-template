@@ -4,10 +4,11 @@ const cssImport = require("postcss-import");
 const simpleVars = require("postcss-simple-vars");
 const nested = require("postcss-nested");
 const autoprefixer = require("autoprefixer");
+const mixins = require("postcss-mixins");
 
 function stylesTask() {
   return src("./src/assets/css/styles.css")
-    .pipe(postcss([cssImport, simpleVars, nested, autoprefixer]))
+    .pipe(postcss([cssImport, mixins, simpleVars, nested, autoprefixer]))
     .pipe(dest("./src/tmp/css"));
 }
 

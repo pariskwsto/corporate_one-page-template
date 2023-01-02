@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 0.9375rem 1.875rem;
+  color: $textBlue;
+  background-color: $primaryWhite;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+
+  &--primary {
+    color: $textWhite;
+    background-color: $primaryBlue;
+  }
+
+  &--sm {
+    font-size: 0.75rem;
+  }
+
+  &--lg {
+    @mixin phoneLg {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+  }
+}
