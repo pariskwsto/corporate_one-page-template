@@ -1,0 +1,52 @@
+.headline {
+  color: $textBody;
+  font-size: 2rem;
+  font-weight: 700;
+
+  @mixin phoneLg {
+    font-size: 2.5rem;
+  }
+
+  &--narrow {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--no-margin-t {
+    margin-top: 2.5rem;
+
+    @mixin tablet {
+      margin-top: 0;
+    }
+  }
+
+  &--no-margin-b {
+    margin-bottom: 0;
+  }
+
+  &--blue {
+    color: $textBlue;
+  }
+
+  &--white {
+    color: $textWhite;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--small {
+    font-size: 1.375rem;
+    font-weight: 300;
+
+    @mixin phoneLg {
+      font-size: 1.5rem;
+    }
+  }
+}

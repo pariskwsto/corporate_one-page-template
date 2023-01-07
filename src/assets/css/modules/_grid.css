@@ -1,0 +1,37 @@
+.row {
+  margin-right: -65px;
+
+  & > .col {
+    padding-right: 65px;
+  }
+
+  & > .col.margin-b-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin tablet {
+    .col__md-4 {
+      float: left;
+      width: 33.33%;
+
+      &.col--large {
+        width: 37%;
+      }
+
+      &.col.margin-b-until-medium {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .col__md-8 {
+      float: left;
+      width: 66.66%;
+
+      &.col--small {
+        width: 63%;
+      }
+    }
+  }
+
+  @mixin clearfix;
+}
