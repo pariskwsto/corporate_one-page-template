@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: $textBody;
   background-color: $primaryWhite;
@@ -7,4 +11,22 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  color: $textBlue;
+  font-weight: 400;
+}
+
+.text-container {
+  p {
+    margin: 0 0 1.2rem 0;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.65;
+
+    @mixin phoneLg {
+      margin: 1.8rem 0;
+    }
+  }
 }
