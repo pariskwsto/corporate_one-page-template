@@ -1,0 +1,38 @@
+.service-item {
+  position: relative;
+  text-align: center;
+  padding-bottom: 2.5rem;
+
+  &__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 0.7em;
+
+    @mixin phoneLg {
+      font-size: 1.875rem;
+    }
+  }
+
+  .content-container &__desc {
+    margin: 0.6rem 0 0 0;
+    padding-left: 0em;
+    padding-right: 0em;
+
+    @mixin phoneLg {
+      padding-left: 6em;
+      padding-right: 6em;
+    }
+
+    @mixin tablet {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

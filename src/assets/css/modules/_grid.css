@@ -1,8 +1,32 @@
 .row {
   margin-right: -65px;
 
+  &--large {
+    margin-right: 0;
+
+    @mixin tablet {
+      margin-right: -40px;
+    }
+
+    @mixin desktop {
+      margin-right: -100px;
+    }
+  }
+
   & > .col {
     padding-right: 65px;
+  }
+
+  &--large > .col {
+    padding-right: 0;
+
+    @mixin tablet {
+      padding-right: 40px;
+    }
+
+    @mixin desktop {
+      padding-right: 100px;
+    }
   }
 
   & > .col.margin-b-until-medium {
