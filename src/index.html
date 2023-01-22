@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -66,7 +66,9 @@
             Empowering your business with a powerful web presence
           </h2>
           <p>
-            <a href="#" class="btn btn--lg btn--primary">Get in Touch</a>
+            <a href="#" class="btn btn--lg btn--primary get-in-touch"
+              >Get in Touch</a
+            >
           </p>
         </div>
       </div>
@@ -81,12 +83,10 @@
         >
           About us
         </h2>
-        <h3
-          class="headline headline--centered headline--medium headline--narrow"
-        >
-          Discover the difference <strong>with us</strong>
+        <h3 class="headline headline--centered headline--md headline--narrow">
+          Discover the difference with us
         </h3>
-        <div class="wrapper wrapper--medium wrapper--margin-b">
+        <div class="wrapper wrapper--md wrapper--margin-b">
           <img
             sizes="(min-width: 970px) 976px, 100vw"
             srcset="
@@ -98,7 +98,7 @@
           />
         </div>
         <div class="row">
-          <div class="col col__md-4 col--large margin-b-until-medium">
+          <div class="col col__md-4 col--lg margin-b-until-tablet">
             <picture>
               <source
                 sizes="404px"
@@ -125,10 +125,10 @@
               />
             </picture>
           </div>
-          <div class="col col__md-8 col--small">
+          <div class="col col__md-8 col--sm">
             <div class="text-container">
               <h2
-                class="headline headline--blue headline--medium headline--no-margin-t"
+                class="headline headline--blue headline--md headline--no-margin-t"
               >
                 Our Founding Story
               </h2>
@@ -171,7 +171,7 @@
         <h2 class="headline headline--centered headline--white">
           Our services
         </h2>
-        <div class="row row--large text-container">
+        <div class="row row--lg text-container">
           <div class="col col__md-4">
             <div class="service-item">
               <h3 class="service-item__title">SERVICE</h3>
@@ -200,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="row row--large text-container">
+        <div class="row row--lg text-container">
           <div class="col col__md-4">
             <div class="service-item">
               <h3 class="service-item__title">SERVICE</h3>
@@ -232,5 +232,95 @@
       </div>
     </div>
     <!-- END - services section -->
+
+    <!-- testimonials section -->
+    <div id="testimonials" class="page-section page-section--testimonials">
+      <div class="testimonials-background-overlay"></div>
+      <div class="wrapper wrapper--no-padding-until-tablet flexbox">
+        <h2 class="headline headline--centered headline--white">
+          Testimonials
+        </h2>
+        <div
+          class="row row--lg row--equal-height-desktop row--padding-t text-container"
+        >
+          <div class="col col__lg-4">
+            <div class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  sizes="160px"
+                  srcset="
+                    assets/img/testimonials/john-doe.jpg        160w,
+                    assets/img/testimonials/john-doe-hi-dpi.jpg 320w
+                  "
+                  alt="John Doe"
+                />
+              </div>
+              <h3 class="testimonial__title">John Doe</h3>
+              <h4 class="testimonial__subtitle">CEO of XYZ Corporation</h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.&rdquo;
+              </p>
+            </div>
+          </div>
+          <div class="col col__lg-4">
+            <div class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  sizes="160px"
+                  srcset="
+                    assets/img/testimonials/jane-doe.jpg        160w,
+                    assets/img/testimonials/jane-doe-hi-dpi.jpg 320w
+                  "
+                  alt="Jane Doe"
+                />
+              </div>
+              <h3 class="testimonial__title">Jane Doe</h3>
+              <h4 class="testimonial__subtitle">
+                Marketing Director at ABC Inc.
+              </h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur.&rdquo;
+              </p>
+            </div>
+          </div>
+          <div class="col col__lg-4">
+            <div class="testimonial testimonial--last">
+              <div class="testimonial__photo">
+                <img
+                  sizes="160px"
+                  srcset="
+                    assets/img/testimonials/alex-smith.jpg        160w,
+                    assets/img/testimonials/alex-smith-hi-dpi.jpg 320w
+                  "
+                  alt="Alex Smith"
+                />
+              </div>
+              <h3 class="testimonial__title">Alex Smith</h3>
+              <h4 class="testimonial__subtitle">
+                Graphic Designer at LMN Design
+              </h4>
+              <p>
+                &ldquo;Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut.&rdquo;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END - testimonials section -->
   </body>
 </html>
