@@ -1,7 +1,11 @@
 .row {
   margin-right: -65px;
 
-  &--large {
+  &--padding-t {
+    padding-top: 80px;
+  }
+
+  &--lg {
     margin-right: 0;
 
     @mixin tablet {
@@ -17,7 +21,7 @@
     padding-right: 65px;
   }
 
-  &--large > .col {
+  &--lg > .col {
     padding-right: 0;
 
     @mixin tablet {
@@ -29,7 +33,7 @@
     }
   }
 
-  & > .col.margin-b-until-medium {
+  & > .col.margin-b-until-tablet {
     margin-bottom: 1rem;
   }
 
@@ -38,11 +42,11 @@
       float: left;
       width: 33.33%;
 
-      &.col--large {
+      &.col--lg {
         width: 37%;
       }
 
-      &.col.margin-b-until-medium {
+      &.col.margin-b-until-tablet {
         margin-bottom: 0rem;
       }
     }
@@ -51,11 +55,58 @@
       float: left;
       width: 66.66%;
 
-      &.col--small {
+      &.col--sm {
+        width: 63%;
+      }
+    }
+  }
+
+  @mixin desktop {
+    .col__lg-4 {
+      float: left;
+      width: 33.33%;
+
+      &.col--lg {
+        width: 37%;
+      }
+
+      &.col.margin-b-until-desktop {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .col__lg-8 {
+      float: left;
+      width: 66.66%;
+
+      &.col--sm {
         width: 63%;
       }
     }
   }
 
   @mixin clearfix;
+
+  /* Begin Equal Height Rules */
+  .flexbox &--equal-height-tablet {
+    @mixin tablet {
+      display: flex;
+    }
+
+    & > .col {
+      float: none;
+      display: flex;
+    }
+  }
+
+  .flexbox &--equal-height-desktop {
+    @mixin desktop {
+      display: flex;
+    }
+
+    & > .col {
+      float: none;
+      display: flex;
+    }
+  }
 }
