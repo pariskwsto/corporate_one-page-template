@@ -1,0 +1,40 @@
+.footer {
+  padding: 0.625rem 0;
+  color: $textBody;
+
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @mixin tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-right: 1.4rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    order: 2;
+
+    @mixin tablet {
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  & .get-in-touch {
+    order: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.9375rem;
+
+    @mixin tablet {
+      order: 2;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
