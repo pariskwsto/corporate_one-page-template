@@ -20,12 +20,16 @@ a {
 
 .text-container {
   p {
-    margin: 0 0 1.2rem 0;
+    margin: 0.875rem 0;
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 1.65;
 
     @mixin phoneLg {
+      margin: 1rem 0;
+    }
+
+    @mixin desktop {
       margin: 1.8rem 0;
     }
   }

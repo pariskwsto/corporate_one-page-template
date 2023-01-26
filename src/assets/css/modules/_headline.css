@@ -1,25 +1,19 @@
 .headline {
-  margin-top: 8px;
+  margin: 1.875rem 0;
   color: $textBody;
-  font-size: 2.1875rem;
+  font-size: 1.875rem;
   font-weight: 400;
 
   @mixin phoneLg {
+    font-size: 2.125rem;
+  }
+
+  @mixin tablet {
     font-size: 2.5rem;
   }
 
-  &--narrow {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   &--no-margin-t {
-    margin-top: 2.5rem;
-
-    @mixin tablet {
-      margin-top: 0;
-    }
+    margin-top: 0;
   }
 
   &--no-margin-b {
@@ -39,11 +33,28 @@
   }
 
   &--md {
-    font-size: 1.5rem;
+    margin: 1.5625rem 0;
+    font-size: 1.375rem;
     font-weight: 300;
 
+    &-margin-t {
+      margin-top: 12px;
+    }
+
+    &-margin-b {
+      margin-bottom: 12px;
+    }
+
+    &--no-margin-t {
+      margin-top: 0;
+    }
+
+    &--no-margin-b {
+      margin-bottom: 0;
+    }
+
     @mixin phoneLg {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
 }
