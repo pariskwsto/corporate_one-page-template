@@ -34,7 +34,7 @@
   }
 
   & > .col.margin-b-until-tablet {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   @mixin tablet {

@@ -12,8 +12,11 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "browser-sync": "^2.27.11",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-svg-sprite": "^2.0.1",
     "postcss": "^8.4.20",
     "postcss-import": "^15.1.0",
     "postcss-mixins": "^9.0.4",
