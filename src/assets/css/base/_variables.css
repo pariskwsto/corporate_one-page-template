@@ -1,9 +1,15 @@
 $fontFamily: "Lato", sans-serif;
 $fontLargeHero: "Montserrat", sans-serif;
 
-$primaryWhite: #fff;
-$primaryBlue: #3b5999;
+$blackColor: #000;
+$blackTextColor: #2e3138;
+$whiteColor: #fff;
+$blueColor: #3b5999;
 
-$textWhite: #fff;
-$textBody: #2e3138;
-$textBlue: #3b5999;
+$primaryLight: $whiteColor;
+$primaryDark: $blackColor;
+$primaryColor: $blueColor;
+
+$textLight: $whiteColor;
+$textDark: $blackTextColor;
+$textBlue: $blueColor;

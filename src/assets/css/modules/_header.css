@@ -1,0 +1,145 @@
+.header {
+  position: absolute;
+  width: 100%;
+  transition: background-color 0.3s ease-out;
+
+  @mixin tablet {
+    position: fixed;
+    background-color: rgba($primaryColor, 0.8);
+    z-index: 2;
+
+    /* REVIEW: when header is solid */
+    &.solid {
+      background-color: rgba($primaryColor, 1);
+    }
+  }
+
+  &.expanded ul {
+    padding: 0 10px;
+    background-color: $primaryLight;
+    z-index: 2;
+
+    @mixin tablet {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: 50% 0%;
+    padding: 19px;
+    background-color: rgba($primaryDark, 0.4);
+    transition: transform 0.3s ease-out;
+    z-index: 2;
+
+    @mixin tablet {
+      left: auto;
+      transform: translateX(0);
+      background-color: transparent;
+
+      /* REVIEW: when header is solid */
+      .header.solid & {
+        transform: scale(0.537);
+      }
+    }
+  }
+
+  &__logo-graphic {
+    text-indent: -9999px;
+  }
+
+  &__menu-icon {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+      width: 20px;
+      height: 3px;
+      background-color: $primaryLight;
+      transition: transform 0.3s ease-out;
+    }
+
+    & .middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      transform-origin: 0 50%;
+      width: 20px;
+      height: 3px;
+      background-color: $primaryLight;
+      transition: all 0.3s ease-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 0;
+      transform-origin: 0 100%;
+      width: 20px;
+      height: 3px;
+      background-color: $primaryLight;
+      transition: transform 0.3s ease-out;
+    }
+
+    &.close-menu {
+      &::before {
+        transform: rotate(45deg) scaleX(1.25);
+      }
+
+      & .middle {
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      &::after {
+        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+      }
+    }
+
+    @mixin tablet {
+      display: none;
+    }
+  }
+
+  &__menu-content {
+    position: relative;
+    transform: scale(1.2);
+    margin-bottom: 40px;
+    padding-top: 72px;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    z-index: -10;
+    opacity: 0;
+
+    @mixin phoneLg {
+      padding-top: 144px;
+    }
+
+    @mixin tablet {
+      transform: scale(1);
+      padding-top: 0;
+      z-index: 1;
+      opacity: 1;
+    }
+
+    &.visible {
+      transform: scale(1);
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+}
