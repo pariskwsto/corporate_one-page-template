@@ -1,6 +1,6 @@
 .headline {
   margin: 1.875rem 0;
-  color: $textBody;
+  color: $textDark;
   font-size: 1.875rem;
   font-weight: 400;
 
@@ -25,7 +25,7 @@
   }
 
   &--white {
-    color: $textWhite;
+    color: $textLight;
   }
 
   &--centered {

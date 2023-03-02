@@ -1,0 +1,90 @@
+.primary-nav {
+  float: none;
+  max-width: 420px;
+  margin: 0 auto;
+
+  @mixin tablet {
+    float: right;
+    max-width: 100%;
+  }
+
+  &--right {
+    @mixin tablet {
+      float: right;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    @mixin clearfix;
+  }
+
+  li {
+    min-width: 120px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba($primaryDark, 0.1);
+    list-style: none;
+
+    @mixin tablet {
+      float: left;
+      display: block;
+      min-width: auto;
+      padding-right: 2px;
+      border: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 16px 14px;
+    color: $textBlue;
+    background-color: $primaryLight;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+
+    @mixin tablet {
+      position: relative;
+      padding: 20px 14px;
+      color: $textLight;
+      background-color: transparent;
+      text-decoration: none;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        transform-origin: 0 0;
+        width: 94%;
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: -12px;
+        border-bottom: 1px solid $primaryLight;
+        border-radius: 5px;
+        transition: opacity 0.2s linear;
+        opacity: 0;
+      }
+
+      &:not(.primary-nav__contact).active::after,
+      &:not(.primary-nav__contact):hover::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  & &__contact {
+    position: relative;
+    color: $textBlue;
+
+    @mixin tablet {
+      display: block;
+      margin-top: 14px;
+      margin-left: 15px;
+      padding: 6px 20px;
+      background-color: $primaryLight;
+    }
+  }
+}

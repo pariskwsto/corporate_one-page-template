@@ -1,47 +1,53 @@
 /* Do not edit `modules/_sprite.css` direclty as it is generated automatically by Gulp. Instead edit `gulpfile.js/templates/sprite.css` */
 
     .icon {
-      background-image: url('/assets/img/sprites/sprite-74261fa7.svg');
+      background-image: url('/assets/img/sprites/sprite-a6653f88.svg');
     }
 
   .icon--css3 {
     width: 60px;
     height: 60px;
-    background-position: 59.45945945945946% 0;
+    background-position: 66.0195530726257% 0;
   }
 
   .icon--gulp {
     width: 60px;
     height: 60px;
-    background-position: 0 50%;
+    background-position: 0 98.94819277108432%;
   }
 
   .icon--html5 {
     width: 60px;
     height: 60px;
-    background-position: 40.54054054054054% 50%;
+    background-position: 33.5195530726257% 98.94819277108432%;
+  }
+
+  .icon--insidesk-logo {
+    width: 118.175px;
+    height: 22.127px;
+    background-position: 0 0;
   }
 
   .icon--javascript {
     width: 60px;
     height: 60px;
-    background-position: 100% 0;
+    background-position: 99.5391061452514% 0;
   }
 
   .icon--npm {
     width: 60px;
     height: 60px;
-    background-position: 100% 50%;
+    background-position: 99.5391061452514% 72.28915662650603%;
   }
 
   .icon--postcss {
     width: 88px;
     height: 60px;
-    background-position: 0 0;
+    background-position: 0 26.659036144578312%;
   }
 
   .icon--thought-cloud {
     width: 48px;
     height: 60px;
-    background-position: 0 100%;
+    background-position: 62.82722513089005% 98.94819277108432%;
   }

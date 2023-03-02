@@ -3,8 +3,8 @@
 }
 
 body {
-  color: $textBody;
-  background-color: $primaryWhite;
+  color: $textDark;
+  background-color: $primaryLight;
   font-family: $fontFamily;
 }
 

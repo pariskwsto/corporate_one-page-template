@@ -2,15 +2,15 @@
   display: inline-block;
   padding: 0.9375rem 1.875rem;
   color: $textBlue;
-  background-color: $primaryWhite;
+  background-color: $primaryLight;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
 
   &--primary {
-    color: $textWhite;
-    background-color: $primaryBlue;
+    color: $textLight;
+    background-color: $primaryColor;
   }
 
   &--sm {
