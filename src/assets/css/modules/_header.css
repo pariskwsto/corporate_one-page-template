@@ -8,7 +8,6 @@
     background-color: rgba($primaryColor, 0.8);
     z-index: 2;
 
-    /* REVIEW: when header is solid */
     &.solid {
       background-color: rgba($primaryColor, 1);
     }
@@ -40,11 +39,6 @@
       left: auto;
       transform: translateX(0);
       background-color: transparent;
-
-      /* REVIEW: when header is solid */
-      .header.solid & {
-        transform: scale(0.537);
-      }
     }
   }
 
