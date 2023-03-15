@@ -1,7 +1,7 @@
 /* Do not edit `modules/_sprite.css` direclty as it is generated automatically by Gulp. Instead edit `gulpfile.js/templates/sprite.css` */
 
     .icon {
-      background-image: url('/assets/img/sprites/sprite-a6653f88.svg');
+      background-image: url('/assets/img/sprites/sprite-824ee4a5.svg');
     }
 
   .icon--css3 {
@@ -10,16 +10,22 @@
     background-position: 66.0195530726257% 0;
   }
 
+  .icon--github {
+    width: 60px;
+    height: 60px;
+    background-position: 0 57.431468531468525%;
+  }
+
   .icon--gulp {
     width: 60px;
     height: 60px;
-    background-position: 0 98.94819277108432%;
+    background-position: 33.5195530726257% 57.431468531468525%;
   }
 
   .icon--html5 {
     width: 60px;
     height: 60px;
-    background-position: 33.5195530726257% 98.94819277108432%;
+    background-position: 99.5391061452514% 0;
   }
 
   .icon--insidesk-logo {
@@ -31,23 +37,35 @@
   .icon--javascript {
     width: 60px;
     height: 60px;
-    background-position: 99.5391061452514% 0;
+    background-position: 99.5391061452514% 41.95804195804196%;
+  }
+
+  .icon--linkedin {
+    width: 60px;
+    height: 60px;
+    background-position: 0 99.3895104895105%;
+  }
+
+  .icon--mail {
+    width: 60px;
+    height: 60px;
+    background-position: 33.5195530726257% 99.3895104895105%;
   }
 
   .icon--npm {
     width: 60px;
     height: 60px;
-    background-position: 99.5391061452514% 72.28915662650603%;
+    background-position: 67.0391061452514% 99.3895104895105%;
   }
 
   .icon--postcss {
     width: 88px;
     height: 60px;
-    background-position: 0 26.659036144578312%;
+    background-position: 0 15.473426573426572%;
   }
 
   .icon--thought-cloud {
     width: 48px;
     height: 60px;
-    background-position: 62.82722513089005% 98.94819277108432%;
+    background-position: 62.82722513089005% 57.431468531468525%;
   }

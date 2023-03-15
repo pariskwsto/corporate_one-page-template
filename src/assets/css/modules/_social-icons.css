@@ -1,0 +1,20 @@
+.social-icons {
+  text-align: center;
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 20px 20px;
+    background-color: $primaryColor;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
