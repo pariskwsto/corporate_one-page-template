@@ -1,0 +1,79 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale(1.2);
+  background-color: rgba($primaryLight, 0.9);
+  transition: all 0.3s ease-out;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+
+  &.visible {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  & .headline {
+    margin-top: 0;
+  }
+
+  &__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__description {
+    max-width: 250px;
+    margin: 0 auto 38px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: center;
+
+    @mixin tablet {
+      max-width: 350px;
+      margin: 0 auto 46px;
+      font-size: 2rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: scaleX(1.4);
+    transform-origin: 100% 0;
+    width: 30px;
+    height: 40px;
+    color: $textBlue;
+    background-color: $primaryLight;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primaryColor;
+
+      & span {
+        color: $textLight;
+      }
+    }
+
+    & span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
