@@ -6,6 +6,7 @@ const pageSections = document.querySelectorAll(".large-hero, .page-section");
 const headerLinks = document.querySelectorAll(
   ".primary-nav a:not(.get-in-touch)"
 );
+const lazyImages = document.querySelectorAll(".lazyload");
 
 class StickyHeader {
   constructor() {
@@ -13,10 +14,12 @@ class StickyHeader {
     this.header = header;
     this.pageSections = pageSections;
     this.headerLinks = headerLinks;
+    this.lazyImages = lazyImages;
 
     this.createHeaderIntersectionObserver();
     this.createPageSectionWaypoints();
     this.handleHeaderLinksScrolling();
+    this.refreshWaypoints();
   }
 
   createHeaderIntersectionObserver() {
@@ -92,6 +95,14 @@ class StickyHeader {
           top: offsetPosition,
           behavior: "smooth",
         });
+      });
+    });
+  }
+
+  refreshWaypoints() {
+    this.lazyImages.forEach(function (img) {
+      img.addEventListener("load", function () {
+        Waypoint.refreshAll();
       });
     });
   }
