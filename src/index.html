@@ -15,6 +15,9 @@
     <!-- styles -->
     <link rel="stylesheet" href="tmp/css/styles.css" />
 
+    <!-- Vendor JS -->
+    <script src="/tmp/js/Vendor.js" type="text/javascript"></script>
+
     <title>insidesk | A corporate one-page responsive template</title>
     <meta
       name="keywords"
@@ -124,8 +127,9 @@
         </h3>
         <div class="wrapper wrapper--md wrapper--margin-b">
           <img
+            class="lazyload"
             sizes="(min-width: 970px) 976px, 100vw"
-            srcset="
+            data-srcset="
               assets/img/about-us/about-us-low-res.jpg  565w,
               assets/img/about-us/about-us.jpg          976w,
               assets/img/about-us/about-us-hi-dpi.jpg  1952w
@@ -138,7 +142,7 @@
             <picture>
               <source
                 sizes="404px"
-                srcset="
+                data-srcset="
                   assets/img/about-us/our-start.jpg        404w,
                   assets/img/about-us/our-start-hi-dpi.jpg 808w
                 "
@@ -146,14 +150,15 @@
               />
               <source
                 sizes="320px"
-                srcset="
+                data-srcset="
                   assets/img/about-us/our-start-portrait.jpg        382w,
                   assets/img/about-us/our-start-portrait-hi-dpi.jpg 764w
                 "
                 media="(min-width: 800px)"
               />
               <img
-                srcset="
+                class="lazyload"
+                data-srcset="
                   assets/img/about-us/our-start-landscape.jpg         800w,
                   assets/img/about-us/our-start-landscape-hi-dpi.jpg 1600w
                 "
@@ -288,7 +293,7 @@
       class="page-section page-section--testimonials"
       data-match-link="#testimonials-link"
     >
-      <div class="testimonials-background-overlay"></div>
+      <div class="testimonials-background-overlay lazyload"></div>
       <div class="wrapper wrapper--no-padding-until-tablet flexbox">
         <h2
           class="headline headline--centered headline--white headline--no-margin-t"
@@ -303,8 +308,9 @@
             <div class="testimonial">
               <div class="testimonial__photo">
                 <img
+                  class="lazyload"
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/img/testimonials/john-doe.jpg        160w,
                     assets/img/testimonials/john-doe-hi-dpi.jpg 320w
                   "
@@ -327,8 +333,9 @@
             <div class="testimonial">
               <div class="testimonial__photo">
                 <img
+                  class="lazyload"
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/img/testimonials/jane-doe.jpg        160w,
                     assets/img/testimonials/jane-doe-hi-dpi.jpg 320w
                   "
@@ -352,8 +359,9 @@
             <div class="testimonial testimonial--last">
               <div class="testimonial__photo">
                 <img
+                  class="lazyload"
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/img/testimonials/alex-smith.jpg        160w,
                     assets/img/testimonials/alex-smith-hi-dpi.jpg 320w
                   "
