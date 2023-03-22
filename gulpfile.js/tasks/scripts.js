@@ -1,4 +1,6 @@
+const { series } = require("gulp");
 const webpack = require("webpack");
+const { modernizrTask } = require("./modernizr");
 
 function scriptsTask(cb) {
   webpack(require("../../webpack.config.js"), function (error, stats) {
@@ -11,4 +13,4 @@ function scriptsTask(cb) {
   });
 }
 
-exports.scripts = scriptsTask;
+exports.scripts = series(modernizrTask, scriptsTask);

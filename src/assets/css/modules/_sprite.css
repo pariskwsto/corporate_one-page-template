@@ -1,71 +1,75 @@
 /* Do not edit `modules/_sprite.css` direclty as it is generated automatically by Gulp. Instead edit `gulpfile.js/templates/sprite.css` */
 
     .icon {
-      background-image: url('/assets/img/sprites/sprite-824ee4a5.svg');
+      background-image: url('/assets/img/sprites/sprite-09b771a2.svg');
+    }
+   
+    .no-svg .icon {
+      background-image: url('/assets/img/sprites/sprite-09b771a2.png');
     }
 
   .icon--css3 {
-    width: 60px;
-    height: 60px;
-    background-position: 66.0195530726257% 0;
+    width: 62px;
+    height: 62px;
+    background-position: 65.67213114754098% 0;
   }
 
   .icon--github {
-    width: 60px;
-    height: 60px;
-    background-position: 0 57.431468531468525%;
+    width: 62px;
+    height: 62px;
+    background-position: 0 57.80536912751678%;
   }
 
   .icon--gulp {
-    width: 60px;
-    height: 60px;
-    background-position: 33.5195530726257% 57.431468531468525%;
+    width: 62px;
+    height: 62px;
+    background-position: 33.87978142076503% 57.80536912751678%;
   }
 
   .icon--html5 {
-    width: 60px;
-    height: 60px;
-    background-position: 99.5391061452514% 0;
+    width: 62px;
+    height: 62px;
+    background-position: 99.55191256830601% 0;
   }
 
   .icon--insidesk-logo {
-    width: 118.175px;
-    height: 22.127px;
+    width: 120.18px;
+    height: 24.13px;
     background-position: 0 0;
   }
 
   .icon--javascript {
-    width: 60px;
-    height: 60px;
-    background-position: 99.5391061452514% 41.95804195804196%;
+    width: 62px;
+    height: 62px;
+    background-position: 99.55191256830601% 41.61073825503356%;
   }
 
   .icon--linkedin {
-    width: 60px;
-    height: 60px;
-    background-position: 0 99.3895104895105%;
+    width: 62px;
+    height: 62px;
+    background-position: 0 99.41610738255034%;
   }
 
   .icon--mail {
-    width: 60px;
-    height: 60px;
-    background-position: 33.5195530726257% 99.3895104895105%;
+    width: 62px;
+    height: 62px;
+    background-position: 33.87978142076503% 99.41610738255034%;
   }
 
   .icon--npm {
-    width: 60px;
-    height: 60px;
-    background-position: 67.0391061452514% 99.3895104895105%;
+    width: 62px;
+    height: 62px;
+    background-position: 67.75956284153006% 99.41610738255034%;
   }
 
   .icon--postcss {
-    width: 88px;
-    height: 60px;
-    background-position: 0 15.473426573426572%;
+    width: 90px;
+    height: 62px;
+    background-position: 0 16.19463087248322%;
   }
 
   .icon--thought-cloud {
-    width: 48px;
-    height: 60px;
-    background-position: 62.82722513089005% 57.431468531468525%;
+    width: 50px;
+    height: 62px;
+    background-position: 63.58974358974359% 57.80536912751678%;
   }
