@@ -1,5 +1,8 @@
-const { watch, src, series } = require("gulp");
 const browserSync = require("browser-sync").create();
+const { watch, src, series } = require("gulp");
+
+const { srcPath, cssPath, jsPath, tmpPath, htmlPath } = require("../config");
+
 const { scripts } = require("./scripts");
 const { styles } = require("./styles");
 
@@ -7,23 +10,20 @@ const reload = browserSync.reload;
 const stream = browserSync.stream;
 
 function cssInjectTask() {
-  return src("./src/assets/css/styles.css").pipe(stream());
+  return src(`${tmpPath}/css/styles.css`).pipe(stream());
 }
 
 function watchTask() {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: "./src",
+      baseDir: srcPath,
     },
   });
 
-  watch("./src/index.html").on("change", reload);
-  watch("./src/assets/css/**/*.css", series(styles, cssInjectTask));
-  watch("./src/assets/js/**/*.js").on(
-    "change",
-    series(scripts, browserSync.reload)
-  );
+  watch(htmlPath).on("change", reload);
+  watch(`${cssPath}/**/*.css`, series(styles, cssInjectTask));
+  watch(`${jsPath}/**/*.js`).on("change", series(scripts, browserSync.reload));
 }
 
 exports.watch = watchTask;

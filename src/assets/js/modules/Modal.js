@@ -1,12 +1,8 @@
-const getInTouchBtns = document.querySelectorAll(".get-in-touch");
-const modal = document.querySelector(".modal");
-const closeModalBtn = document.querySelector(".modal__close");
-
 class Modal {
   constructor() {
-    this.getInTouchBtns = getInTouchBtns;
-    this.modal = modal;
-    this.closeModalBtn = closeModalBtn;
+    this.getInTouchBtns = document.querySelectorAll(".get-in-touch");
+    this.modal = document.querySelector(".modal");
+    this.closeModalBtn = document.querySelector(".modal__close");
 
     this.events();
   }

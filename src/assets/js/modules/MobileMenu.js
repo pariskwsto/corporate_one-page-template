@@ -1,16 +1,12 @@
-const header = document.querySelector(".header");
-const menuIcon = document.querySelector(".header__menu-icon");
-const menuContent = document.querySelector(".header__menu-content");
-const largeHeroBtn = document.querySelector(
-  ".large-hero__text-container .get-in-touch"
-);
-
 class MobileMenu {
   constructor() {
-    this.header = header;
-    this.menuIcon = menuIcon;
-    this.menuContent = menuContent;
-    this.largeHeroBtn = largeHeroBtn;
+    this.header = document.querySelector(".header");
+    this.menuIcon = document.querySelector(".header__menu-icon");
+    this.menuContent = document.querySelector(".header__menu-content");
+    this.largeHeroBtn = document.querySelector(
+      ".large-hero__text-container .get-in-touch"
+    );
+
     this.events();
   }
 

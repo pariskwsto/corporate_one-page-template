@@ -1,20 +1,14 @@
 import waypoints from "../../../../node_modules/waypoints/lib/noframework.waypoints";
 
-const headerTriggerElement = document.querySelector("h1.large-hero__title");
-const header = document.querySelector(".header");
-const pageSections = document.querySelectorAll(".large-hero, .page-section");
-const headerLinks = document.querySelectorAll(
-  ".primary-nav a:not(.get-in-touch)"
-);
-const lazyImages = document.querySelectorAll(".lazyload");
-
 class StickyHeader {
   constructor() {
-    this.headerTriggerElement = headerTriggerElement;
-    this.header = header;
-    this.pageSections = pageSections;
-    this.headerLinks = headerLinks;
-    this.lazyImages = lazyImages;
+    this.headerTriggerElement = document.querySelector("h1.large-hero__title");
+    this.header = document.querySelector(".header");
+    this.pageSections = document.querySelectorAll(".large-hero, .page-section");
+    this.headerLinks = document.querySelectorAll(
+      ".primary-nav a:not(.get-in-touch)"
+    );
+    this.lazyImages = document.querySelectorAll(".lazyload");
 
     this.createHeaderIntersectionObserver();
     this.createPageSectionWaypoints();
