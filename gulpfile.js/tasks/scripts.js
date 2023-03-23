@@ -1,5 +1,6 @@
 const { series } = require("gulp");
 const webpack = require("webpack");
+
 const { modernizrTask } = require("./modernizr");
 
 function scriptsTask(cb) {

@@ -1,8 +1,10 @@
-const { src, dest, series, parallel } = require("gulp");
-const svgSprite = require("gulp-svg-sprite");
-const rename = require("gulp-rename");
 const del = require("del");
+const { src, dest, series, parallel } = require("gulp");
+const rename = require("gulp-rename");
+const svgSprite = require("gulp-svg-sprite");
 const svg2png = require("gulp-svg2png");
+
+const { cssPath, imgPath, tmpPath } = require("../config");
 
 const config = {
   shape: {
@@ -30,35 +32,35 @@ const config = {
 };
 
 function startCleanSpritesTask() {
-  return del(["./src/tmp/sprite", "./src/assets/img/sprites"]);
+  return del([`${tmpPath}/sprite`, `${imgPath}/sprites`]);
 }
 
 function createSpriteTask() {
-  return src("./src/assets/img/icons/**/*.svg")
+  return src(`${imgPath}/icons/**/*.svg`)
     .pipe(svgSprite(config))
-    .pipe(dest("./src/tmp/sprite/"));
+    .pipe(dest(`${tmpPath}/sprite/`));
 }
 
 function createPngCopyTask() {
-  return src("./src/tmp/sprite/css/*.svg")
+  return src(`${tmpPath}/sprite/css/*.svg`)
     .pipe(svg2png())
-    .pipe(dest("./src/tmp/sprite/css"));
+    .pipe(dest(`${tmpPath}/sprite/css`));
 }
 
 function copySpriteGraphicTask() {
-  return src("./src/tmp/sprite/css/**/*.{svg,png}").pipe(
-    dest("./src/assets/img/sprites")
+  return src(`${tmpPath}/sprite/css/**/*.{svg,png}`).pipe(
+    dest(`${imgPath}/sprites`)
   );
 }
 
 function copySpriteCSSTask() {
-  return src("./src/tmp/sprite/css/*.css")
+  return src(`${tmpPath}/sprite/css/*.css`)
     .pipe(rename("_sprite.css"))
-    .pipe(dest("./src/assets/css/modules"));
+    .pipe(dest(`${cssPath}/modules`));
 }
 
 function endCleanSpritesTask() {
-  return del("./src/tmp/sprite");
+  return del(`${tmpPath}/sprite`);
 }
 
 exports.icons = series(

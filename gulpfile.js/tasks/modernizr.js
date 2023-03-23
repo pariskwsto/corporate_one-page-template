@@ -1,14 +1,16 @@
 const { src, dest } = require("gulp");
 const modernizr = require("gulp-modernizr");
 
+const { cssPath, jsPath, tmpPath } = require("../config");
+
 function modernizrTask(cb) {
-  return src(["./src/assets/css/**/*.css", "./src/assets/js/**/*.js"])
+  return src([`${cssPath}/**/*.css`, `${jsPath}/**/*.js`])
     .pipe(
       modernizr({
         options: ["setClasses"],
       })
     )
-    .pipe(dest("./src/tmp/js/"));
+    .pipe(dest(`${tmpPath}/js/`));
   cb();
 }
 
