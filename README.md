@@ -23,6 +23,8 @@
 - [License](#license)
 - [Support](#support)
 
+This is a mobile-first HTML template website that promotes businesses. The website is built using the BEM methodology for CSS and uses PostCSS for style processing. The JavaScript code follows the object-oriented programming and module pattern, is transpiled with Babel, and is bundled with Webpack. The build process is handled by Gulp and includes support for CSS prefixes such as Autoprefixer and other Gulp plugins. The template also includes lazy loading for images to improve performance.
+
 ## Getting Started
 
 Start by cloning this repository
@@ -48,9 +50,6 @@ $ npm install gulp-cli -g
 Continue with the website development
 
 ```sh
-# create svg and png icons sprite
-$ gulp icons
-
 # start the development server
 $ gulp watch
 ```

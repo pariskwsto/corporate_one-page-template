@@ -16,8 +16,8 @@ const {
   htmlPath,
 } = require("../config");
 
-const { scripts } = require("./scripts");
 const { icons } = require("./icons");
+const { scripts } = require("./scripts");
 const { styles } = require("./styles");
 
 function deleteDistFolderTask() {

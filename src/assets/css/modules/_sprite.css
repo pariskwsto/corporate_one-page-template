@@ -2,11 +2,11 @@
 /* Instead edit `gulpfile.js/templates/sprite.css` */
 
     .icon {
-      background-image: url('/assets/img/sprites/sprite-09b771a2.svg');
+      background-image: url('../../assets/img/sprites/sprite-09b771a2.svg');
     }
    
     .no-svg .icon {
-      background-image: url('/assets/img/sprites/sprite-09b771a2.png');
+      background-image: url('../../assets/img/sprites/sprite-09b771a2.png');
     }
 
   .icon--css3 {

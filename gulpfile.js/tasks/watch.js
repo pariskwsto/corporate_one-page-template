@@ -3,6 +3,7 @@ const { watch, src, series } = require("gulp");
 
 const { srcPath, cssPath, jsPath, tmpPath, htmlPath } = require("../config");
 
+const { icons } = require("./icons");
 const { scripts } = require("./scripts");
 const { styles } = require("./styles");
 
@@ -26,4 +27,4 @@ function watchTask() {
   watch(`${jsPath}/**/*.js`).on("change", series(scripts, browserSync.reload));
 }
 
-exports.watch = watchTask;
+exports.watch = series(icons, styles, scripts, watchTask);

@@ -2,7 +2,9 @@ const del = require("del");
 const { src, dest, series, parallel } = require("gulp");
 const rename = require("gulp-rename");
 const svgSprite = require("gulp-svg-sprite");
-const svg2png = require("gulp-svg2png");
+const imagemin = require("gulp-imagemin");
+const sharp = require("sharp");
+const through2 = require("through2");
 
 const { cssPath, imgPath, tmpPath } = require("../config");
 
@@ -43,7 +45,27 @@ function createSpriteTask() {
 
 function createPngCopyTask() {
   return src(`${tmpPath}/sprite/css/*.svg`)
-    .pipe(svg2png())
+    .pipe(
+      through2.obj(function (file, _, cb) {
+        return sharp(file.contents)
+          .png()
+          .toBuffer()
+          .then(function (buffer) {
+            file.contents = buffer;
+            return cb(null, file);
+          })
+          .catch(function (err) {
+            console.error(err);
+            return cb(null, file);
+          });
+      })
+    )
+    .pipe(
+      rename(function (path) {
+        return (path.extname = ".png");
+      })
+    )
+    .pipe(imagemin())
     .pipe(dest(`${tmpPath}/sprite/css`));
 }
 
