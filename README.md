@@ -5,7 +5,7 @@
 - Live Demo: [https://github.pariskwsto.com/corporate_one-page-template/](https://github.pariskwsto.com/corporate_one-page-template/)
 - GitHub Pages: [https://pariskwsto.github.io/corporate_one-page-template/](https://pariskwsto.github.io/corporate_one-page-template/)
 
-![corporate_one-page-template-ss-1](https://user-images.githubusercontent.com/22442894/235325342-3f9db2d1-a3c1-426a-8dd3-75d0fe7b5f18.jpg)
+![corporate_one-page-template-ss-1](https://user-images.githubusercontent.com/22442894/235480903-20286e79-fcb6-46a5-99ba-acbcf0bf1551.png)
 
 ## Contents
 
@@ -31,37 +31,43 @@ Start by cloning this repository
 
 ```sh
 # HTTPS
-$ git clone https://github.com/pariskwsto/corporate_one-page-template.git
+git clone https://github.com/pariskwsto/corporate_one-page-template.git
+```
 
+```sh
 # cd into project root
-$ cd corporate_one-page-template
+cd corporate_one-page-template
 ```
 
 then
 
 ```sh
 # install node modules
-$ npm install
+npm install
+```
 
+```sh
 # install gulp-cli globally (if you don't have it already)
-$ npm install gulp-cli -g
+npm install gulp-cli -g
 ```
 
 Continue with the website development
 
 ```sh
 # start the development server
-$ gulp watch
+gulp watch
 ```
 
 or build and preview the website
 
 ```sh
 # build the project
-$ gulp build
+gulp build
+```
 
+```sh
 # preview the built project
-$ gulp previewDist
+gulp previewDist
 ```
 
 ## Tasks
@@ -70,7 +76,7 @@ $ gulp previewDist
 
 ```sh
 # build the project
-$ gulp build
+gulp build
 ```
 
 - It deletes the dist directory (if already exists)
@@ -85,7 +91,7 @@ $ gulp build
 
 ```sh
 # create new svg and png icons sprite
-$ gulp icons
+gulp icons
 ```
 
 - It creates a new copy of svg and png icons set
@@ -94,7 +100,7 @@ $ gulp icons
 
 ```sh
 # preview the built project
-$ gulp previewDist
+gulp previewDist
 ```
 
 - It runs the BrowserSync static server to preview the built project
@@ -103,7 +109,7 @@ $ gulp previewDist
 
 ```sh
 # bundle the javascript files
-$ gulp scripts
+gulp scripts
 ```
 
 - It bundles the javascript files
@@ -113,7 +119,7 @@ $ gulp scripts
 
 ```sh
 # generate the stylesheets from the PostCSS of the css files
-$ gulp styles
+gulp styles
 ```
 
 - It generates the stylesheets from the PostCSS of the css files
@@ -123,7 +129,7 @@ $ gulp styles
 
 ```sh
 # start the development server
-$ gulp watch
+gulp watch
 ```
 
 - It runs the BrowserSync static server to preview the project
@@ -136,7 +142,7 @@ $ gulp watch
 ### See all available tasks
 
 ```sh
-$ gulp --tasks
+gulp --tasks
 ```
 
 ## Technologies Used
