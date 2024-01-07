@@ -154,19 +154,26 @@ gulp --tasks
 - Normalize.css
 - BEM Methodology
 - Mobile-first
-- JavaScript
+- Responsive website
+- Responsive images
+- Lazy loading images
+- LazySizes
+- Picturefill
+- Waypoints
+- JavaScript (OOP)
+- Module pattern
 - jQuery
 - Gulp
 - BrowserSync
 - Autoprefixer
-- Lazy loading images
-- Responsive images
+- Icon sprites
 - Modernizr
 - Babel
 - Webpack
-- LazySizes
-- Picturefill
-- Waypoints
+- Git
+- Github
+- Node.js
+- NPM
 
 ## Credits
 
