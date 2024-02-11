@@ -1,19 +1,22 @@
-FROM node:19.6.0 AS builder
+FROM node:20.11.0 AS builder
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY ./package*.json ./
 
-RUN npm install
+RUN npm install && npm install gulp-cli@2.3.0 -g
 
-RUN npm install gulp-cli -g
-
-COPY . .
+COPY ./gulpfile.js ./gulpfile.js
+COPY ./src/assets ./src/assets
+COPY ./src/index.html ./src
+COPY ./webpack.config.js ./
 
 RUN gulp build
 
-FROM nginx:stable-alpine
+FROM nginx:stable-alpine AS production
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
+
+COPY --from=builder /app/dist ./
 
 EXPOSE 80

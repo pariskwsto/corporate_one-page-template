@@ -1,11 +1,13 @@
 # Corporate - One page template
 
-> A corporate one-page responsive template
+> A professional, responsive one-page template for corporate websites
 
-- Live Demo: [https://github.pariskwsto.com/corporate_one-page-template/](https://github.pariskwsto.com/corporate_one-page-template/)
-- GitHub Pages: [https://pariskwsto.github.io/corporate_one-page-template/](https://pariskwsto.github.io/corporate_one-page-template/)
+- Live Demo: [Visit Project Page](https://github.pariskwsto.com/corporate_one-page-template)
+- Alternative URL: [GitHub Pages](https://pariskwsto.github.io/corporate_one-page-template)
 
 ![corporate_one-page-template-ss-1](https://user-images.githubusercontent.com/22442894/235480903-20286e79-fcb6-46a5-99ba-acbcf0bf1551.png)
+
+This is a mobile-first HTML template designed for corporate businesses. It employs the BEM methodology for CSS, utilizes PostCSS for style processing, and follows object-oriented programming principles and module pattern in JavaScript. The build process, managed by Gulp, includes support for CSS prefixes, image optimization, lazy loading for improved performance, and more.
 
 ## Contents
 
@@ -23,50 +25,41 @@
 - [License](#license)
 - [Support](#support)
 
-This is a mobile-first HTML template website that promotes businesses. The website is built using the BEM methodology for CSS and uses PostCSS for style processing. The JavaScript code follows the object-oriented programming and module pattern, is transpiled with Babel, and is bundled with Webpack. The build process is handled by Gulp and includes support for CSS prefixes such as Autoprefixer and other Gulp plugins. The template also includes lazy loading for images to improve performance.
-
 ## Getting Started
 
-Start by cloning this repository
+Clone this repository:
 
 ```sh
-# HTTPS
 git clone https://github.com/pariskwsto/corporate_one-page-template.git
 ```
 
+Navigate into project root:
+
 ```sh
-# cd into project root
 cd corporate_one-page-template
 ```
 
-then
+Install dependencies:
 
 ```sh
-# install node modules
-npm install
+npm install && npm install gulp-cli@2.3.0 -g
 ```
 
-```sh
-# install gulp-cli globally (if you don't have it already)
-npm install gulp-cli -g
-```
-
-Continue with the website development
+For development:
 
 ```sh
-# start the development server
 gulp watch
 ```
 
-or build and preview the website
+For building:
 
 ```sh
-# build the project
 gulp build
 ```
 
+For built application preview:
+
 ```sh
-# preview the built project
 gulp previewDist
 ```
 
@@ -75,7 +68,6 @@ gulp previewDist
 ### Build
 
 ```sh
-# build the project
 gulp build
 ```
 
@@ -90,7 +82,6 @@ gulp build
 ### Icons
 
 ```sh
-# create new svg and png icons sprite
 gulp icons
 ```
 
@@ -99,7 +90,6 @@ gulp icons
 ### Preview Dist
 
 ```sh
-# preview the built project
 gulp previewDist
 ```
 
@@ -108,7 +98,6 @@ gulp previewDist
 ### Scripts
 
 ```sh
-# bundle the javascript files
 gulp scripts
 ```
 
@@ -118,7 +107,6 @@ gulp scripts
 ### Styles
 
 ```sh
-# generate the stylesheets from the PostCSS of the css files
 gulp styles
 ```
 
@@ -128,7 +116,6 @@ gulp styles
 ### Watch
 
 ```sh
-# start the development server
 gulp watch
 ```
 
@@ -148,36 +135,27 @@ gulp --tasks
 ## Technologies Used
 
 - HTML5
-- CSS3
-- Flexbox
+- CSS3 (Flexbox)
 - PostCSS
 - Normalize.css
 - BEM Methodology
-- Mobile-first
-- Responsive website
-- Responsive images
-- Lazy loading images
-- LazySizes
-- Picturefill
-- Waypoints
-- JavaScript (OOP)
-- Module pattern
+- Mobile-first Design
+- Responsive Images & Lazy Loading
+- JavaScript (OOP & Module Pattern)
 - jQuery
 - Gulp
 - BrowserSync
 - Autoprefixer
-- Icon sprites
+- Icon Sprites
 - Modernizr
 - Babel
 - Webpack
-- Git
-- Github
-- Node.js
-- NPM
+- Git & GitHub
+- Node.js & NPM
 
 ## Credits
 
-This template was designed and built by [pariskwsto](https://github.com/pariskwsto).
+Designed and built by [pariskwsto](https://github.com/pariskwsto).
 
 ## License
 
